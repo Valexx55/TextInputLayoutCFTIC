@@ -38,6 +38,11 @@ public class FocusListener implements View.OnFocusChangeListener {
             {
                 TextInputLayout wrapmail = (TextInputLayout)actividad.findViewById(R.id.tilcajamail);
                 wrapmail.setError("Mail Incorrecto");
+
+            } else { //si el mail está bien
+
+                TextInputLayout wrapmail = (TextInputLayout)actividad.findViewById(R.id.tilcajamail);
+                wrapmail.setErrorEnabled(false);
             }
         }
     }
